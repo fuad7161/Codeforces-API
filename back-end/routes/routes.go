@@ -7,5 +7,7 @@ import (
 )
 
 func Routes() {
+	http.HandleFunc("GET /", handlers.Home)
 	http.HandleFunc("GET /user-info", handlers.UserInfo)
+	http.HandleFunc("POST /user-info", handlers.UserInfoPost)
 }
