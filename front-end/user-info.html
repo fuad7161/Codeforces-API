@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codeforces User</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    h2, p {
+      margin: 0;
+    }
+    .details {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-header">
+      <img src="{{.User.Avatar}}" alt="Avatar">
+      <h2>{{.User.FirstName}} {{.User.LastName}}</h2>
+      <p><strong>Handle:</strong> {{.User.Handle}}</p>
+      <p><strong>Rank:</strong> {{.User.Rank}}</p>
+    </div>
+    <div class="details">
+      <p><strong>Country:</strong> {{.User.Country}}</p>
+      <p><strong>City:</strong> {{.User.City}}</p>
+      <p><strong>Organization:</strong> {{.User.Organization}}</p>
+      <p><strong>Email:</strong> {{.User.Email}}</p>
+      <p><strong>Rating:</strong> {{.User.Rating}}</p>
+      <p><strong>Max Rating:</strong> {{.User.MaxRating}}</p>
+      <p><strong>Max Rank:</strong> {{.User.MaxRank}}</p>
+      <p><strong>Friends Count:</strong> {{.User.FriendOfCount}}</p>
+    </div>
+  </div>
+</body>
+</html>
